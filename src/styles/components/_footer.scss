@@ -1,0 +1,24 @@
+.icon {
+    color: $black;
+    margin: 0.4rem 0;
+
+    &:hover {
+        @extend %hover;
+    }
+}
+
+.footer {
+    margin-left: 5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    width: 4rem;
+    height: 12rem;
+    background-color: $green;
+    border-radius: 4rem;
+
+
+}

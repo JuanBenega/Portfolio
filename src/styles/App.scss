@@ -1,0 +1,18 @@
+@import './config/variables';
+@import './config/extends';
+@import './components/header';
+@import './components/footer';
+
+
+.App {
+    background-image: url('../img/fondo1.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
