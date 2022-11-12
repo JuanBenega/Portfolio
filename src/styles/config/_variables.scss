@@ -1,0 +1,28 @@
+/*-- COLORS --*/
+
+$white: #ecf3db;
+$grey: #545454;
+$gold: #EEEF20;
+$green: #80B918;
+$black: #1A1A17;
+
+/*--FUENTE--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$font: 'Bebas Neue', cursive;
+
+
+/*--BREAKPOINTS--*/
+
+$breakpoints: (
+    tablet: 768px,
+    desktop: 1024px,
+    huge: 1920px
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

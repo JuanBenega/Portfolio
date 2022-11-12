@@ -1,0 +1,37 @@
+.header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font;
+    font-size: 2.5rem;
+}
+
+.headerMenu {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.links {
+    text-decoration: none;
+    color: $green;
+    text-shadow: 0.2rem 0.2rem $grey;
+
+    &:hover {
+        @extend %hover;
+        text-shadow: 0.1rem 0.1rem $green;
+    }
+}
+
+.oneIcon {
+    margin: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: $green;
+    border-radius: 4rem;
+}
