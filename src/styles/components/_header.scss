@@ -16,8 +16,7 @@
 
 .links {
     text-decoration: none;
-    color: $green;
-    text-shadow: 0.2rem 0.2rem $grey;
+    @extend %textGreen;
 
     &:hover {
         @extend %hover;

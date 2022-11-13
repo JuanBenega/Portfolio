@@ -2,3 +2,8 @@
     scale: 110%;
     color: $grey;
 }
+
+%textGreen {
+    color: $green;
+    text-shadow: 0.2rem 0.2rem $grey;
+}

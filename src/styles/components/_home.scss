@@ -1,0 +1,33 @@
+.home {
+    position: relative;
+}
+
+.homeCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgHome {
+    width: 60vw;
+    z-index: 0;
+}
+
+.homeText {
+    flex-direction: column;
+    position: absolute;
+    font-family: $font;
+    @extend %textGreen;
+    padding-left: 50rem;
+    padding-bottom: 10rem;
+}
+
+.homeTitle {
+    font-size: 5rem;
+
+}
+
+.homeSubTitle {
+    font-size: 2rem;
+}

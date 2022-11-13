@@ -2,14 +2,21 @@
 @import './config/extends';
 @import './components/header';
 @import './components/footer';
+@import './components/home';
 
 
 .App {
     background-image: url('../img/fondo1.jpg');
     height: 100vh;
     background-size: cover;
+    position: absolute;
+    z-index: 1;
 }
 
+.appFooter {
+    position: absolute;
+    z-index: 2;
+}
 
 *{
     margin: 0;
