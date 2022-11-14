@@ -1,9 +1,17 @@
 %hover {
-    scale: 110%;
-    color: $grey;
+    scale: 120%;
+    color: $white;
 }
 
-%textGreen {
-    color: $green;
+%textPrim {
+    color: $prim;
     text-shadow: 0.2rem 0.2rem $grey;
+}
+
+%oneIcon {
+    width: 4rem;
+    height: 4rem;
+    background-color: $prim;
+    border-radius: 4rem;
+    cursor: pointer;
 }

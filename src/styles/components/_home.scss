@@ -1,12 +1,12 @@
 .home {
     position: relative;
+    background-size: cover;
 }
 
 .homeCont {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .imgHome {
@@ -17,16 +17,22 @@
 .homeText {
     flex-direction: column;
     position: absolute;
-    @extend %textGreen;
     padding-left: 40rem;
     padding-bottom: 10rem;
 }
 
-.homeTitle {
+.title {
     font-size: 5rem;
-
 }
 
-.homeSubTitle {
+.subtitle {
     font-size: 2rem;
+}
+
+.dark {
+    background-image: url('../../img/fondo13.jpg');
+}
+
+.light {
+    background-image: url('../../img/fondo12.jpg');
 }

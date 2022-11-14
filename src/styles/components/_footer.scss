@@ -1,26 +1,27 @@
 .icon {
     color: $black;
-    margin: 0.4rem 0;
+    margin: 0 0.4rem;
 
     &:hover {
         @extend %hover;
     }
 }
 
-
+.footer {
+    // display: flex;
+    // justify-content: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    padding-bottom: 3rem;
+}
 
 .footerMenu {
-    position: absolute;
-    z-index: 2;
-    margin-left: 5rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-self: end;
-    width: 4rem;
-    height: 12rem;
-    background-color: $green;
+    width: 12rem;
+    height: 4rem;
+    background-color: $prim;
     border-radius: 4rem;
 }
 
