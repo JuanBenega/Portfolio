@@ -10,16 +10,15 @@
 }
 
 .imgHome {
-    width: 60vw;
+    width: 58vw;
     z-index: 0;
 }
 
 .homeText {
     flex-direction: column;
     position: absolute;
-    font-family: $font;
     @extend %textGreen;
-    padding-left: 50rem;
+    padding-left: 40rem;
     padding-bottom: 10rem;
 }
 
