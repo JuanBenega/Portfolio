@@ -1,26 +1,30 @@
 
 import './styles/App.scss'
-import Header from './components/Header';
-import Footer from './components/Footer';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
+import ModeProvider from './context/ModeContext';
+import Projects from './components/Projects';
+
+
 
 function App() {
+
   return (
-    <BrowserRouter>
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/skills' element={<Skills />} />
-      </Routes>
-      <div className='appFooter'><Footer /></div>
-      
-    </div>
-    </BrowserRouter>
+    <ModeProvider>
+      <BrowserRouter>
+        <div className='App'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </ModeProvider>
   );
 }
 

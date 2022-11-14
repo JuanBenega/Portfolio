@@ -5,19 +5,12 @@
 @import './components/home';
 @import './components/about';
 @import './components/skills';
+@import './components/projects';
 
 .App {
-    background-image: url('../img/fondo8.jpg');
     height: 100vh;
     font-family: $font2;
-    background-size: cover;
-    position: absolute;
-    z-index: 1;
-}
-
-.appFooter {
-    position: absolute;
-    z-index: 2;
+    @extend %textPrim;
 }
 
 *{

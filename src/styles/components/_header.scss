@@ -15,11 +15,11 @@
 
 .links {
     text-decoration: none;
-    @extend %textGreen;
+    @extend %textPrim;
 
     &:hover {
         @extend %hover;
-        text-shadow: 0.1rem 0.1rem $green;
+        text-shadow: 0.1rem 0.1rem $prim;
     }
 }
 
@@ -28,8 +28,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: $green;
-    border-radius: 4rem;
+    @extend %oneIcon;
 }
