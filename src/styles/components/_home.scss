@@ -31,8 +31,14 @@
 
 .dark {
     background-image: url('../../img/fondo13.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 .light {
     background-image: url('../../img/fondo12.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
