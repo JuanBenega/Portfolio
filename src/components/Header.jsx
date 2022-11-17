@@ -21,9 +21,9 @@ const Header = () => {
                     <Nav className="header" >
                         <Nav.Link href="/" className='oneIcon' ><HouseFill className='icon' size={40} /></Nav.Link>
                         <div className='headerMenu'>
-                            <Nav.Link className='links' href='/about' >SOBRE MI</Nav.Link>
-                            <Nav.Link className='links' href='/skills'>HABILIDADES</Nav.Link>
-                            <Nav.Link className='links' href='/projects'>PROYECTOS</Nav.Link>
+                            <Nav.Link className='links' href='/about' >Sobre mi</Nav.Link>
+                            <Nav.Link className='links' href='/skills'>Habilidades</Nav.Link>
+                            <Nav.Link className='links' href='/projects'>Proyectos</Nav.Link>
                         </div>
                         <div className="oneIcon" onClick={switchMode}><BrightnessHighFill size={40} className='icon' /></div>
                     </Nav>

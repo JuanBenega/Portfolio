@@ -21,7 +21,11 @@
     justify-content: center;
     width: 12rem;
     height: 4rem;
-    background-color: $prim;
+    background-color: $white;
     border-radius: 4rem;
+    &:hover {
+        @extend %hover;
+        background-color: $prim;
+    }
 }
 

@@ -30,15 +30,15 @@
 }
 
 .dark {
-    background-image: url('../../img/fondo13.jpg');
-    background-repeat: no-repeat;
-  background-attachment: fixed;
+    background: rgb(95,206,226);
+    background: linear-gradient(156deg, rgba(95,206,226,1) 0%, rgba(4,26,125,1) 17%, rgba(4,26,125,1) 59%, rgba(68,8,132,1) 76%);
+    background-attachment: fixed;
 
 }
 
 .light {
-    background-image: url('../../img/fondo12.jpg');
-    background-repeat: no-repeat;
+    background: rgb(184,2,169);
+    background: linear-gradient(156deg, rgba(184,2,169,1) 0%, rgba(0,183,210,1) 76%);
   background-attachment: fixed;
 
 }

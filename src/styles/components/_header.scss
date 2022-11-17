@@ -15,11 +15,12 @@
 
 .links {
     text-decoration: none;
+    font-weight: bold;
     @extend %textPrim;
 
     &:hover {
         @extend %hover;
-        text-shadow: 0.1rem 0.1rem $prim;
+
     }
 }
 
@@ -29,4 +30,8 @@
     align-items: center;
     justify-content: center;
     @extend %oneIcon;
+    &:hover {
+        @extend %hover;
+        background-color: $prim;
+    }
 }

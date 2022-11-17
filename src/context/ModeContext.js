@@ -4,7 +4,7 @@ export const ModeContext = createContext();
 
 const ModeProvider = ({ children }) => {
 
-    const [darkMode, setdarkMode] = useState();
+    const [darkMode, setdarkMode] = useState(false);
     let changeMode=0;
 
     useEffect(() => {

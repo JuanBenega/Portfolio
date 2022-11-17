@@ -5,11 +5,12 @@
     justify-content: space-around;
     margin: 3rem 0;
     text-align: center;
-    border: solid;
-    border-radius: 2rem;
-    border-color: $prim;
+    // border: solid;
+    // border-radius: 2rem;
+    // border-color: $white;
     margin: 4rem 3rem;
-    padding: 2rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
 }
 
 .projectTitle {
@@ -35,4 +36,17 @@
 .projectImg {
     width: 30vw;
     margin-top: 0.5rem;
+    border: solid;
+    border-radius: 2rem;
+    border-color: $prim;
+    border-width: 0.1rem;
+}
+
+.column {
+    margin: 1rem 0;
+}
+
+.indv {
+    display: flex;
+    align-self: flex-end;
 }
