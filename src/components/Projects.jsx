@@ -101,7 +101,7 @@ const Projects = () => {
                             <img id="port" className="projectImg" src={cya} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         </div>
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/JuanBenega" className="projectLink" target={'_blank'}>
+                            <a href="https://github.com/JuanBenega/Portfolio" className="projectLink" target={'_blank'}>
                                 <h3 className="subtitle">Github</h3></a>
                             <a href="https://jbenega.vercel.app/" className="projectLink" target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
