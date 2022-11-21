@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap"
 import laptop from '../img/laptop-removebg-preview.png'
+import fondo from '../img/fondo.gif'
 import Footer from "./Footer"
 import Header from './Header';
 import { useContext } from 'react';
@@ -14,7 +15,7 @@ const Home = () => {
             <Header />
             <Container >
                 <div className="homeCont">
-                    <img src={laptop} alt="Desarrollo web" className="imgHome" />
+                    <img src={fondo} alt="Desarrollo web" className="imgHome" />
                     <div className="homeText">
                         <h1 className="title">Juan Benega</h1>
                         <h3 className="subtitle">Desarrollador Frontend </h3>
