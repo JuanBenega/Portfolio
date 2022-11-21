@@ -16,16 +16,16 @@ const Header = () => {
    
     return (
         <>
-            <Navbar expand="lg" collapseOnSelect sticky="top" >
+            <Navbar expand="lg" collapseOnSelect >
                 <Container fluid>
                     <Nav className="header" >
-                        <Nav.Link href="/" className='oneIcon' ><HouseFill className='icon' size={40} /></Nav.Link>
+                        <Nav.Link href="/" className='oneIcon sticky' ><HouseFill className='icon' size={40} /></Nav.Link>
                         <div className='headerMenu'>
                             <Nav.Link className='links' href='/about' >Sobre mi</Nav.Link>
                             <Nav.Link className='links' href='/skills'>Habilidades</Nav.Link>
                             <Nav.Link className='links' href='/projects'>Proyectos</Nav.Link>
                         </div>
-                        <div className="oneIcon" onClick={switchMode}><BrightnessHighFill size={40} className='icon' /></div>
+                        <div className="oneIcon blur" onClick={switchMode}><BrightnessHighFill size={40} className='blur' /></div>
                     </Nav>
                 </Container>
             </Navbar>

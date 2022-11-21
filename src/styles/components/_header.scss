@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 99vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,4 +34,21 @@
         @extend %hover;
         background-color: $prim;
     }
+}
+
+.sticky {
+    position: sticky;
+    top: 5rem;
+}
+
+.blur {
+    color: $gray;
+    &:hover {
+        scale: 100%;
+        color: $gray;
+        transition: 0.3s;
+        text-shadow: 0.1rem 0.1rem $prim;
+        background-color: $white;
+    }
+
 }

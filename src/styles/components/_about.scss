@@ -6,30 +6,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0 11rem;
 }
 
 .aboutImg {
     width: 30vw;
     border-radius: 50%;
-    margin-right: 20rem;
+    //margin-right: 50rem;
     margin-top: 5rem;
 }
 
 .aboutText {
     flex-direction: column;
-    position: absolute;
-    padding-left: 50rem;
+//    padding-left: 40rem;
     text-align: end;
-    margin-right: 10rem;
+  //  margin-right: 10rem;
 }
 
 .aboutTitle {
     font-size: 5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .aboutSubTitle {
     font-size: 2rem;
-    
+  //  background-color: #1e18424f;   
+//    border-radius: 45%;
 }

@@ -10,15 +10,16 @@
 }
 
 .imgHome {
-    width: 58vw;
+    width: 50vw;
     z-index: 0;
+    margin-right: 30rem;
 }
 
 .homeText {
     flex-direction: column;
     position: absolute;
-    padding-left: 40rem;
-    padding-bottom: 10rem;
+    padding-left: 50rem;
+    padding-bottom: 25rem;
 }
 
 .title {
@@ -30,9 +31,10 @@
 }
 
 .dark {
-    background: rgb(95,206,226);
-    background: linear-gradient(156deg, rgba(95,206,226,1) 0%, rgba(4,26,125,1) 17%, rgba(4,26,125,1) 59%, rgba(68,8,132,1) 76%);
-    background-attachment: fixed;
+    background-color: #1e1842;
+    // background: rgb(95,206,226);
+    // background: linear-gradient(156deg, rgba(95,206,226,1) 0%, rgba(4,26,125,1) 17%, rgba(4,26,125,1) 59%, rgba(68,8,132,1) 76%);
+    // background-attachment: fixed;
 
 }
 
