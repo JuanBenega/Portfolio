@@ -15,6 +15,8 @@ import cyaecom from '../img/cuerpoyarmoniaecommerce.PNG'
 import cyaecom2 from '../img/cuerpoyarmoniaecommerce2.png'
 import portfolio from '../img/portfolio.PNG'
 import portfolio2 from '../img/portfolio2.png'
+import nocode from '../img/NoCode.PNG'
+import nocode2 from '../img/nocode2.png'
 
 const Projects = () => {
 
@@ -36,6 +38,9 @@ const Projects = () => {
                 break;
             case "masc":
                 e.target.src = mascotas2;
+                break;
+            case "nocode":
+                e.target.src = nocode2;
                 break;
             default:
                 break;
@@ -59,6 +64,9 @@ const Projects = () => {
                 break;
             case "masc":
                 e.target.src = mascotas;
+                break;
+            case "nocode":
+                e.target.src = nocode;
                 break;
             default:
                 break;
@@ -98,7 +106,7 @@ const Projects = () => {
                     <Col className="column">
                         <h1>Portfolio</h1>
                         <div className="projectImgGroup">
-                            <img id="port" className="projectImg" src={cya} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                            <img id="port" className="projectImg" src={portfolio} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         </div>
                         <div className="projectLinkGroup">
                             <a href="https://github.com/JuanBenega/Portfolio" className="projectLink" target={'_blank'}>
@@ -131,6 +139,23 @@ const Projects = () => {
                             <a href="https://pet-search.netlify.app/home" className="projectLink" target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
+                    </Col>
+                </Row>
+                <Row className="projectGroup" lg={3}>
+                    <Col className="column">
+                        <h1 className="projectTitle">NoCode</h1>
+                    </Col>
+                    <Col className="column">
+                        <h1>Alquiler de hospedaje</h1>
+                        <img id="nocode" className="projectImg" src={nocode} alt="Chat de mensajería instantánea" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                        <div className="projectLinkGroup">
+                            <a href="https://github.com/No-Country/S4-05-T-Java-React" className="projectLink" target={'_blank'}>
+                                <h3 className="subtitle">Github</h3></a>
+                            <a href="https://palomochat.vercel.app/" className="projectLink" target={'_blank'}>
+                                <h3 className="subtitle">Deploy</h3></a>
+                        </div>
+                    </Col>
+                    <Col className="column">
                     </Col>
                 </Row>
             </Container>
