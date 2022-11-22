@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/JuanBenega/Portfolio">
-    <img src="![screenshot](/src/img/fondo.gif)" alt="Logo">
+    <img src="/src/img/fondo.gif" alt="Logo">
   </a>
 
   <h3 align="center">Juan Benega Portfolio</h3>
@@ -46,7 +46,7 @@ Portfolio creado con React JS volcando todos los conocimientos adquiridos en la 
 ## Contact
 
 #### Juan Benega
-<a href="https://linkedin.com/in/in/juanbenegadesarrolloweb/" target="blank">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a> <a href="https://github.com/JuanBenega" target="blank"> - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a> - <a href="mailto:jmbenega@gmail.com" target="blank"> ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
+<a href="https://linkedin.com/in/in/juanbenegadesarrolloweb/" target="blank">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>  <a href="https://github.com/JuanBenega" target="blank">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>   <a href="mailto:jmbenega@gmail.com" target="blank"> ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
 
 
 <p align="right"><a href="#readme-top">back to top</a></p>
