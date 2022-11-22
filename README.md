@@ -9,8 +9,8 @@
   <h3 align="center">Juan Benega Portfolio</h3>
 
   <p align="center">
-  <a href="https://github.com/No-Country/S4-05-T-Java-React">Explore the docs</a> - 
-  <a href="https://palomochat.vercel.app/">View a demo</a>
+  <a href="https://github.com/JuanBenega/Portfolio">Explore the docs</a> - 
+  <a href="https://jbenega.vercel.app/">View a demo</a>
 </p>
 </div>
 
