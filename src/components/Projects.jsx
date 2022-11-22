@@ -149,9 +149,7 @@ const Projects = () => {
                         <h1>Alquiler de hospedaje</h1>
                         <img id="nocode" className="projectImg" src={nocode} alt="Chat de mensajería instantánea" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/No-Country/S4-05-T-Java-React" className="projectLink" target={'_blank'}>
-                                <h3 className="subtitle">Github</h3></a>
-                            <a href="https://palomochat.vercel.app/" className="projectLink" target={'_blank'}>
+                            <a href="https://my-rent-place.bubbleapps.io/version-test/index" className="projectLink" target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
