@@ -29,10 +29,10 @@
   
   /* Tooltip text */
   .tooltip .tooltiptext {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     visibility: hidden;
-    width: 120px;
-    background-color: $prim;
+    width: 7rem;
+    background-color: $sec;
     color: $white;
     text-align: center;
     padding: 5px 0;
@@ -59,7 +59,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: $prim transparent transparent transparent;
+    border-color: $sec transparent transparent transparent;
   }
   
   /* Show the tooltip text when you mouse over the tooltip container */

@@ -31,7 +31,9 @@
     justify-content: center;
     @extend %oneIcon;
     &:hover {
-        @extend %hover;
+        scale: 120%;
+        color: $white;
+        transition: 0.3s;
         background-color: $prim;
     }
 }
@@ -42,13 +44,78 @@
 }
 
 .blur {
-    color: $gray;
+    color: $fondo;
+    background-color: $fondo;
     &:hover {
         scale: 100%;
-        color: $gray;
+        color: $fondo;
         transition: 0.3s;
         text-shadow: 0.1rem 0.1rem $prim;
-        background-color: $white;
+        background-color: $fondo;
     }
 
 }
+
+.headerSide {
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 4rem;
+    background-color: $white;
+    border-radius: 4rem;
+    &:hover {
+        scale: 120%;
+        color: $white;
+        transition: 0.3s;
+        background-color: $prim;
+    }
+}
+
+/* Tooltip container */
+.tooltipH {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltipH .tooltiptextH {
+    font-size: 1.2rem;
+    visibility: hidden;
+    width: 5rem;
+    background-color: $sec;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -40px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltipH .tooltiptextH::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $sec transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltipH:hover .tooltiptextH {
+    visibility: visible;
+    opacity: 1;
+  }

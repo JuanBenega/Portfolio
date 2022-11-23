@@ -20,6 +20,8 @@
     position: absolute;
     padding-left: 50rem;
     padding-bottom: 25rem;
+    text-decoration: none;
+    color: $prim;
 }
 
 .title {
@@ -31,7 +33,7 @@
 }
 
 .dark {
-    background-color: #1e1842;
+    background-color: $fondo;
     // background: rgb(95,206,226);
     // background: linear-gradient(156deg, rgba(95,206,226,1) 0%, rgba(4,26,125,1) 17%, rgba(4,26,125,1) 59%, rgba(68,8,132,1) 76%);
     // background-attachment: fixed;
