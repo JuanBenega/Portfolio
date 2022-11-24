@@ -7,11 +7,7 @@ import { ModeContext } from "../context/ModeContext";
 
 const About = () => {
 
-    const { darkMode } = useContext(ModeContext);
-
     return (
-        < div className={darkMode ? "home dark" : "home light"}>
-            <Header />
             <Container className="about">
                 <div className="aboutCont">
                     <img src={foto} alt="Desarrollo web" className="aboutImg" />
@@ -27,8 +23,6 @@ const About = () => {
                     </div>
                 </div>
             </Container>
-            <Footer />
-        </div>
     )
 }
 

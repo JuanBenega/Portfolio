@@ -1,21 +1,16 @@
 import { Container } from "react-bootstrap"
-import laptop from '../img/laptop-removebg-preview.png'
 import fondo from '../img/fondo.gif'
-import Footer from "./Footer"
-import Header from './Header';
-import { useContext } from 'react';
-import { ModeContext } from "../context/ModeContext";
+import fondoLight from '../img/fondo2.gif'
 import { NavLink } from "react-router-dom";
 
-const Home = ({switchMode}) => {
-
-
+const Home = ({mode}) => {
+    console.log(mode);
     return (
         < div className="home">
             <Container >
                 <div className="homeCont">
-                    <img src={fondo} alt="Desarrollo web" className="imgHome" />
-                    <NavLink to={"/about"} className="homeText">
+                    <img src={mode=="dark" ? fondo : fondoLight} alt="Desarrollo web" className={mode=="dark" ? "imgHome" : "imgHomeLight"} />
+                    <NavLink to={"/about"} className={mode=="dark" ? "homeText" : "homeTextLight"} >
                         <h1 className="title">Juan Benega</h1>
                         <h3 className="subtitle">Desarrollador Frontend </h3>
                     </NavLink>

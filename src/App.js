@@ -14,9 +14,7 @@ import Footer from './components/Footer';
 function App() {
 
   const [mode, setMode] = useState(localStorage.getItem("theme") || "light");
-  console.log(mode);
-  let changeMode = 0;
-
+  
   const switchMode = () => {
     //console.log(themeMode);
     switch (mode) {
@@ -43,14 +41,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className={mode === "dark" ? "App dark" : "App light"}>
-        <Header switchMode={switchMode} />
+        <Header switchMode={switchMode} mode={mode}/>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/' element={<Home mode={mode} />}  />
+          <Route path='/about' element={<About mode={mode}/>} />
+          <Route path='/skills' element={<Skills mode={mode}/>} />
+          <Route path='/projects' element={<Projects mode={mode}/>} />
         </Routes>
-        <Footer />
+        <Footer mode={mode}/>
       </div>
     </BrowserRouter>
   );

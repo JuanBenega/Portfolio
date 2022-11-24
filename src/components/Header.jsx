@@ -5,34 +5,31 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useContext } from 'react';
 import { ModeContext } from "../context/ModeContext";
 
-const Header = ({switchMode}) => {
-   
-
-
+const Header = ({switchMode, mode}) => {
 
     return (
         <>
             <Navbar expand="lg" collapseOnSelect >
                 <Container fluid>
                     <Nav className="header" >
-                        <Nav.Link href="/" className='oneIcon' >
+                        <Nav.Link href="/" className={mode==="dark" ? 'oneIcon' : 'oneIconLight'} >
                             <div className='tooltipH'>
-                                <HouseFill className='icon' size={40} />
+                                <HouseFill className={mode==="dark" ? 'icon' : 'iconLight'} size={40} />
                                 <span className="tooltiptextH">Home</span>
                             </div>
                         </Nav.Link>
                         <div className='headerMenu'>
-                            <Nav.Link className='links' href='/about' >Sobre mi</Nav.Link>
-                            <Nav.Link className='links' href='/skills'>Habilidades</Nav.Link>
-                            <Nav.Link className='links' href='/projects'>Proyectos</Nav.Link>
+                            <Nav.Link className={mode==="dark" ? 'links' :'linksLight'} href='/about' >Sobre mi</Nav.Link>
+                            <Nav.Link className={mode==="dark" ? 'links' :'linksLight'} href='/skills'>Habilidades</Nav.Link>
+                            <Nav.Link className={mode==="dark" ? 'links' :'linksLight'} href='/projects'>Proyectos</Nav.Link>
                         </div>
-                        <div className="headerSide" >
+                        <div className={mode==="dark" ? "headerSide" : "headerSideLight"} >
                             <div className='tooltipH'>
-                                <BrightnessHighFill size={40} className='icon' onClick={switchMode} />
+                                <BrightnessHighFill size={40} className={mode==="dark" ? 'icon' : 'iconLight'} onClick={switchMode} />
                                 <span className="tooltiptextH">Mode</span>
                             </div>
                             <a href='https://drive.google.com/file/d/1CVYS6GXP_5IXYuHo8RcSDLlbPlg_lABy/view?usp=share_link' target={'_blank'} className='tooltipH'>
-                                <ArrowDownCircleFill size={40} className='icon' />
+                                <ArrowDownCircleFill size={40} className={mode==="dark" ? 'icon' : 'iconLight'} />
                                 <span className="tooltiptextH">CV</span>
                             </a>
                         </div>
