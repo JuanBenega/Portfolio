@@ -14,41 +14,101 @@
 }
 
 .links {
-    text-decoration: none;
-    font-weight: bold;
-    @extend %textPrim;
-
+    @extend %links;
     &:hover {
         @extend %hover;
+    }
+}
 
+.linksLight {
+    @extend %links;
+    color: $primLight;
+    &:hover {
+        @extend %hover;
     }
 }
 
 .oneIcon {
-    margin: 2rem 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     @extend %oneIcon;
+    
     &:hover {
-        @extend %hover;
+        @extend %iconHover; 
         background-color: $prim;
     }
 }
 
-.sticky {
-    position: sticky;
-    top: 5rem;
+.oneIconLight {
+    @extend %oneIcon;
+    background-color: $primLight;
+    
+    &:hover {
+        @extend %iconHover; 
+        background-color: $secLight;
+    }
 }
 
-.blur {
-    color: $gray;
-    &:hover {
-        scale: 100%;
-        color: $gray;
-        transition: 0.3s;
-        text-shadow: 0.1rem 0.1rem $prim;
-        background-color: $white;
-    }
 
+.headerSide {
+    @extend %headerSide;
+
+    &:hover {
+        @extend %iconHover;
+        background-color: $prim;
+    }
+}
+
+.headerSideLight {
+    @extend %headerSide;
+    background-color: $primLight;
+    &:hover {
+        @extend %iconHover;
+        background-color: $secLight;
+    }
+}
+
+/* Tooltip container */
+.tooltipH {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltipH .tooltiptextH {
+    font-size: 1.2rem;
+    visibility: hidden;
+    width: 5rem;
+    background-color: $sec;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -40px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltipH .tooltiptextH::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $sec transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipH:hover .tooltiptextH {
+    visibility: visible;
+    opacity: 1;
 }

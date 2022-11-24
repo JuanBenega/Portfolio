@@ -18,9 +18,7 @@ import portfolio2 from '../img/portfolio2.png'
 import nocode from '../img/NoCode.PNG'
 import nocode2 from '../img/nocode2.png'
 
-const Projects = () => {
-
-    const { darkMode } = useContext(ModeContext);
+const Projects = ({mode}) => {
 
     const modifImg = (e) => {
         switch (e.target.id) {
@@ -74,8 +72,7 @@ const Projects = () => {
     }
 
     return (
-        <div className={darkMode ? "dark" : "light"}>
-            <Header />
+        <div>
             <Container fluid>
                 <Row className="projectGroup">
                     <Col className="column indv">
@@ -84,34 +81,34 @@ const Projects = () => {
                     <Col className="column">
                         <h1>Sitio web sobre bienestar y salud</h1>
                         <div className="projectImgGroup">
-                            <img id="cya" className="projectImg" src={cya} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                            <img id="cya" className={mode==="dark" ? "projectImg" : "projectImgLight"} src={cya} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         </div>
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/JuanBenega/Proyecto-Desarrollo-Web" className="projectLink" target={'_blank'}>
+                            <a href="https://github.com/JuanBenega/Proyecto-Desarrollo-Web" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Github</h3></a>
-                            <a href="https://juanbenega.github.io/Proyecto-Desarrollo-Web/" className="projectLink" target={'_blank'}>
+                            <a href="https://juanbenega.github.io/Proyecto-Desarrollo-Web/" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
                     <Col className="column">
                         <h1>Ecommerce</h1>
-                        <img id="cyaEcom" className="projectImg" src={cyaecom} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                        <img id="cyaEcom" className={mode==="dark" ? "projectImg" : "projectImgLight"} src={cyaecom} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/JuanBenega/proyecto-react" className="projectLink" target={'_blank'}>
+                            <a href="https://github.com/JuanBenega/proyecto-react" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Github</h3></a>
-                            <a href="https://proyecto-react-ashen.vercel.app/" className="projectLink" target={'_blank'}>
+                            <a href="https://proyecto-react-ashen.vercel.app/" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
                     <Col className="column">
                         <h1>Portfolio</h1>
                         <div className="projectImgGroup">
-                            <img id="port" className="projectImg" src={portfolio} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                            <img id="port" className={mode==="dark" ? "projectImg" : "projectImgLight"} src={portfolio} alt="Ecommerce Cuerpo y Armonía" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         </div>
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/JuanBenega/Portfolio" className="projectLink" target={'_blank'}>
+                            <a href="https://github.com/JuanBenega/Portfolio" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Github</h3></a>
-                            <a href="https://jbenega.vercel.app/" className="projectLink" target={'_blank'}>
+                            <a href="https://jbenega.vercel.app/" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
@@ -122,21 +119,21 @@ const Projects = () => {
                     </Col>
                     <Col className="column">
                         <h1>Mensajería instantánea</h1>
-                        <img id="pal" className="projectImg" src={palomo} alt="Chat de mensajería instantánea" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                        <img id="pal" className={mode==="dark" ? "projectImg" : "projectImgLight"} src={palomo} alt="Chat de mensajería instantánea" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/No-Country/S4-05-T-Java-React" className="projectLink" target={'_blank'}>
+                            <a href="https://github.com/No-Country/S4-05-T-Java-React" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Github</h3></a>
-                            <a href="https://palomochat.vercel.app/" className="projectLink" target={'_blank'}>
+                            <a href="https://palomochat.vercel.app/" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
                     <Col className="column">
                         <h1>Portal para mascotas perdidas</h1>
-                        <img id="masc" className="projectImg" src={mascotas} alt="Portal para mascotas perdidas" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                        <img id="masc" className={mode==="dark" ? "projectImg" : "projectImgLight"} src={mascotas} alt="Portal para mascotas perdidas" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         <div className="projectLinkGroup">
-                            <a href="https://github.com/No-Country/c6-32-m-jquery-node" className="projectLink" target={'_blank'}>
+                            <a href="https://github.com/No-Country/c6-32-m-jquery-node" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Github</h3></a>
-                            <a href="https://pet-search.netlify.app/home" className="projectLink" target={'_blank'}>
+                            <a href="https://pet-search.netlify.app/home" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
@@ -147,9 +144,9 @@ const Projects = () => {
                     </Col>
                     <Col className="column">
                         <h1>Alquiler de hospedaje</h1>
-                        <img id="nocode" className="projectImg" src={nocode} alt="Chat de mensajería instantánea" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
+                        <img id="nocode" className={mode==="dark" ? "projectImg" : "projectImgLight"} src={nocode} alt="Chat de mensajería instantánea" onMouseEnter={(e) => { modifImg(e) }} onMouseLeave={(e) => { restImg(e) }} />
                         <div className="projectLinkGroup">
-                            <a href="https://my-rent-place.bubbleapps.io/version-test/index" className="projectLink" target={'_blank'}>
+                            <a href="https://my-rent-place.bubbleapps.io/version-test/index" className={mode==="dark" ? "projectLink" : "projectLinkLight"} target={'_blank'}>
                                 <h3 className="subtitle">Deploy</h3></a>
                         </div>
                     </Col>
@@ -157,7 +154,6 @@ const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <Footer />
         </div>
     )
 }

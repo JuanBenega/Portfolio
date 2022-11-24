@@ -1,16 +1,11 @@
 import { Container } from "react-bootstrap";
-import Footer from "./Footer";
-import Header from './Header';
-import { useContext } from 'react';
-import { ModeContext } from "../context/ModeContext";
+
 
 const Skills = () => {
 
-    const { darkMode } = useContext(ModeContext);
 
     return (
-        < div className={darkMode ? "dark" : "light"}>
-            <Header />
+        < div>
             <Container className="skills">
                 <h1>Habilidades</h1>
                 <div className="skillsIcons">
@@ -65,7 +60,6 @@ const Skills = () => {
 
                 </div>
             </Container>
-            <Footer />
         </div>
     )
 }

@@ -3,11 +3,15 @@
     color: $white;
     transition: 0.3s;
     text-shadow: 0.1rem 0.1rem $prim;
-
 }
 
 %textPrim {
     color: $prim;
+    //text-shadow: 0.1rem 0.1rem $white;
+}
+
+%textPrimLight {
+    color: $primLight;
     //text-shadow: 0.1rem 0.1rem $white;
 }
 
@@ -17,4 +21,63 @@
     background-color: $white;
     border-radius: 4rem;
     cursor: pointer;
+    margin: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%icon {
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+
+%iconHover {
+    scale: 120%;
+    color: $white;
+    transition: 0.3s;
+}
+
+%headerSide {
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    width: 8rem;
+    height: 4rem;
+    padding-top: 0.5rem;
+    background-color: $white;
+}
+
+%homeText {
+    flex-direction: column;
+    position: absolute;
+    padding-left: 50rem;
+    padding-bottom: 25rem;
+    text-decoration: none;
+}
+
+%links {
+    color: $prim;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+%img {
+    width: 30vw;
+    margin-top: 0.5rem;
+    border: solid;
+    border-radius: 2rem;
+    border-width: 0.1rem;
+}
+
+%footerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 4rem;
+    padding-top: 0.5rem;
+    border-radius: 4rem;
 }

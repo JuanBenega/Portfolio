@@ -8,9 +8,8 @@
 @import './components/projects';
 
 .App {
-    height: 100vh;
+  //  height: 100vh;
     font-family: $font2;
-    @extend %textPrim;
 }
 
 *{
@@ -18,3 +17,13 @@
     padding: 0;
     box-sizing: border-box;
 };
+
+.dark {
+    background: $fondo;
+    @extend %textPrim;
+}
+
+.light {
+    background: $fondoLight;
+    color: $primLight;
+}

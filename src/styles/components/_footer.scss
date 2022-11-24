@@ -1,31 +1,57 @@
 .icon {
+    @extend %icon;
     color: $black;
-    margin: 0 0.4rem;
 
     &:hover {
-        @extend %hover;
+        @extend %iconHover;
+    }
+}
+
+.iconLight {
+    @extend %icon;
+    color: $white;
+
+    &:hover {
+        @extend %iconHover;
+        color: $primLight;
     }
 }
 
 .footer {
     // display: flex;
     // justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 5rem;
     padding-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .footerMenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 12rem;
-    height: 4rem;
+    @extend %footerMenu;
     background-color: $white;
-    border-radius: 4rem;
     &:hover {
-        @extend %hover;
+        @extend %iconHover;
         background-color: $prim;
     }
 }
 
+.footerMenuLight {
+    @extend %footerMenu;
+    background-color: $primLight;
+
+    &:hover {
+        @extend %iconHover;
+        background-color: $secLight;
+
+    }
+}
+
+.p {
+    color: $white;
+    margin-left: 2.5rem;
+}
+
+.pLight {
+    color: $primLight;
+    margin-left: 2.5rem;
+}

@@ -15,32 +15,34 @@
     margin-right: 30rem;
 }
 
+.imgHomeLight {
+    width: 38vw;
+    z-index: 0;
+    margin-right: 30rem;
+}
+
 .homeText {
-    flex-direction: column;
-    position: absolute;
-    padding-left: 50rem;
-    padding-bottom: 25rem;
+    @extend %homeText;
+    color: $prim;
+
+}
+
+.homeTextLight {
+    @extend %homeText;
+    color: $primLight;
+
 }
 
 .title {
     font-size: 5rem;
+    &:hover {
+        @extend %hover;
+        scale: 110%;;
+
+    }
 }
 
 .subtitle {
     font-size: 2rem;
 }
 
-.dark {
-    background-color: #1e1842;
-    // background: rgb(95,206,226);
-    // background: linear-gradient(156deg, rgba(95,206,226,1) 0%, rgba(4,26,125,1) 17%, rgba(4,26,125,1) 59%, rgba(68,8,132,1) 76%);
-    // background-attachment: fixed;
-
-}
-
-.light {
-    background: rgb(184,2,169);
-    background: linear-gradient(156deg, rgba(184,2,169,1) 0%, rgba(0,183,210,1) 76%);
-  background-attachment: fixed;
-
-}
