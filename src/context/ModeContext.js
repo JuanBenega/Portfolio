@@ -4,16 +4,30 @@ export const ModeContext = createContext();
 
 const ModeProvider = ({ children }) => {
 
-    const [darkMode, setdarkMode] = useState(false);
-    let changeMode=0;
+    const [mode, setMode] = useState("");
+    let changeMode = 0;
+    let themeMode = localStorage.getItem("theme");
 
-    useEffect(() => {
-        darkMode ? setdarkMode(false) : setdarkMode(true);
-    }, [changeMode])
+    const switchMode = () => {
+        console.log(themeMode);
+        switch (themeMode) {
+            case "light":
+                setMode("dark");
+                break;
+            case "dark":
+                setMode("light");
+                break;
+            default:
+                break;
+        }
+        localStorage.setItem("theme", mode);
+        console.log(themeMode);
+
+    }
 
 
     return (
-        <ModeContext.Provider value={{ darkMode, changeMode }}>
+        <ModeContext.Provider value={{ mode, switchMode }}>
             {children}
         </ModeContext.Provider>
     );

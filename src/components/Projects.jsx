@@ -20,7 +20,7 @@ import nocode2 from '../img/nocode2.png'
 
 const Projects = () => {
 
-    const { darkMode } = useContext(ModeContext);
+    const { mode } = useContext(ModeContext);
 
     const modifImg = (e) => {
         switch (e.target.id) {
@@ -74,7 +74,7 @@ const Projects = () => {
     }
 
     return (
-        <div className={darkMode ? "dark" : "light"}>
+        <div className={mode=="dark" ? "dark" : "light"}>
             <Header />
             <Container fluid>
                 <Row className="projectGroup">

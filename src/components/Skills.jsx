@@ -6,10 +6,10 @@ import { ModeContext } from "../context/ModeContext";
 
 const Skills = () => {
 
-    const { darkMode } = useContext(ModeContext);
+    const { mode } = useContext(ModeContext);
 
     return (
-        < div className={darkMode ? "dark" : "light"}>
+        < div className={mode=="dark" ? "dark" : "light"}>
             <Header />
             <Container className="skills">
                 <h1>Habilidades</h1>

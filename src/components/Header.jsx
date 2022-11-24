@@ -5,14 +5,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useContext } from 'react';
 import { ModeContext } from "../context/ModeContext";
 
-const Header = () => {
+const Header = ({switchMode}) => {
+   
 
-    const { changeMode, setchangeMode } = useContext(ModeContext)
 
-    const switchMode = () => {
-        changeMode++;
-        console.log(changeMode);
-    }
 
     return (
         <>

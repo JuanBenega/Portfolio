@@ -7,13 +7,11 @@ import { useContext } from 'react';
 import { ModeContext } from "../context/ModeContext";
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Home = ({switchMode}) => {
 
-    const { darkMode } = useContext(ModeContext);
 
     return (
-        < div className={darkMode ? "home dark" : "home light"}>
-            <Header />
+        < div className="home">
             <Container >
                 <div className="homeCont">
                     <img src={fondo} alt="Desarrollo web" className="imgHome" />
@@ -23,7 +21,6 @@ const Home = () => {
                     </NavLink>
                 </div>
             </Container>
-            <Footer />
         </div>
     )
 }
