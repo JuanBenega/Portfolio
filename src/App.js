@@ -13,10 +13,9 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [mode, setMode] = useState(localStorage.getItem("theme") || "light");
-  
+  const [mode, setMode] = useState(localStorage.getItem("theme") || "dark");
+
   const switchMode = () => {
-    //console.log(themeMode);
     switch (mode) {
       case "light":
         setMode("dark");
@@ -27,28 +26,25 @@ function App() {
       default:
         break;
     }
-    //     localStorage.setItem("theme", mode);
-    //     console.log(themeMode);
 
   }
 
-  // useEffect(() => {
-  //   themeMode = localStorage.getItem("theme");
-
-  // }, [themeMode])
+  useEffect(() => {
+    localStorage.setItem("theme", mode);
+  }, [mode])
 
 
   return (
     <BrowserRouter>
       <div className={mode === "dark" ? "App dark" : "App light"}>
-        <Header switchMode={switchMode} mode={mode}/>
+        <Header switchMode={switchMode} mode={mode} />
         <Routes>
-          <Route path='/' element={<Home mode={mode} />}  />
-          <Route path='/about' element={<About mode={mode}/>} />
-          <Route path='/skills' element={<Skills mode={mode}/>} />
-          <Route path='/projects' element={<Projects mode={mode}/>} />
+          <Route path='/' element={<Home mode={mode} />} />
+          <Route path='/about' element={<About mode={mode} />} />
+          <Route path='/skills' element={<Skills mode={mode} />} />
+          <Route path='/projects' element={<Projects mode={mode} />} />
         </Routes>
-        <Footer mode={mode}/>
+        <Footer mode={mode} />
       </div>
     </BrowserRouter>
   );
