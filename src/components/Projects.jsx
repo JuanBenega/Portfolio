@@ -2,70 +2,13 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import cya from '../img/cuerpoyarmonia.PNG'
-import cya2 from '../img/cuerpoyarmonia2.PNG'
 import palomo from '../img/palomochat.PNG'
-import palomo2 from '../img/palomochat2.png'
 import mascotas from '../img/mascotas.PNG'
-import mascotas2 from '../img/mascotas2.png'
 import cyaecom from '../img/cuerpoyarmoniaecommerce.PNG'
-import cyaecom2 from '../img/cuerpoyarmoniaecommerce2.png'
 import portfolio from '../img/portfolio.PNG'
-import portfolio2 from '../img/portfolio2.png'
 import nocode from '../img/NoCode.PNG'
-import nocode2 from '../img/nocode2.png'
 
 const Projects = ({ mode }) => {
-
-    const modifImg = (e) => {
-        switch (e.target.id) {
-            case "cya":
-                e.target.src = cya2;
-                break;
-            case "cyaEcom":
-                e.target.src = cyaecom2;
-                break;
-            case "port":
-                e.target.src = portfolio2;
-                break;
-            case "pal":
-                e.target.src = palomo2;
-                break;
-            case "masc":
-                e.target.src = mascotas2;
-                break;
-            case "nocode":
-                e.target.src = nocode2;
-                break;
-            default:
-                break;
-        }
-
-    }
-
-    const restImg = (e) => {
-        switch (e.target.id) {
-            case "cya":
-                e.target.src = cya;
-                break;
-            case "cyaEcom":
-                e.target.src = cyaecom;
-                break;
-            case "port":
-                e.target.src = portfolio;
-                break;
-            case "pal":
-                e.target.src = palomo;
-                break;
-            case "masc":
-                e.target.src = mascotas;
-                break;
-            case "nocode":
-                e.target.src = nocode;
-                break;
-            default:
-                break;
-        }
-    }
 
     return (
         <div>
