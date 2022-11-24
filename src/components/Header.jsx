@@ -2,8 +2,6 @@ import { BrightnessHighFill, HouseFill, ArrowDownCircleFill } from 'react-bootst
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useContext } from 'react';
-import { ModeContext } from "../context/ModeContext";
 
 const Header = ({switchMode, mode}) => {
 
