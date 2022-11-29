@@ -5,6 +5,10 @@
     &:hover {
         @extend %iconHover;
     }
+
+    @media screen and (max-width: 492px) {
+        width: 1rem;   
+    }
 }
 
 .iconLight {
@@ -18,12 +22,19 @@
 }
 
 .footer {
-    // display: flex;
-    // justify-content: center;
+
     margin-top: 2rem;
     margin-left: 5rem;
     padding-bottom: 1rem;
     font-size: 1.3rem;
+
+    @media screen and (max-width: 492px) {
+        margin-left: 0;
+        font-size: 1rem;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    }
 }
 
 .footerMenu {
@@ -32,6 +43,12 @@
     &:hover {
         @extend %iconHover;
         background-color: $prim;
+    }
+    @media screen and (max-width: 492px) {
+        width: 6rem;
+        height: 2rem;
+        padding-top: 0.5rem;
+        border-radius: 2rem;
     }
 }
 
@@ -49,6 +66,9 @@
 .p {
     color: $white;
     margin-left: 2.5rem;
+    @media screen and (max-width: 492px) {
+        margin-left: 0;
+    }
 }
 
 .pLight {
