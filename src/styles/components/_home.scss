@@ -7,12 +7,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 492px) {
+        flex-direction: row;
+    }
 }
 
 .imgHome {
     width: 51vw;
     z-index: 0;
     margin-right: 30rem;
+    
+    @media screen and (max-width: 492px) {
+        width: 91vw;
+        margin-right: 0;
+        padding-top: 5rem;
+    }
 }
 
 .imgHomeLight {
@@ -25,6 +35,10 @@
     @extend %homeText;
     color: $prim;
 
+    @media screen and (max-width: 492px) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 15rem;    }
 }
 
 .homeTextLight {
@@ -38,11 +52,19 @@
     &:hover {
         @extend %hover;
         scale: 110%;;
+    }
 
+    @media screen and (max-width: 492px) {
+        font-size: 2.5rem;
     }
 }
 
 .subtitle {
     font-size: 2rem;
+
+    @media screen and (max-width: 492px) {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 

@@ -15,10 +15,10 @@ const Projects = ({ mode }) => {
             <Container fluid>
                 <Row className="projectGroup">
                     <Col className="column indv">
-                        <h1 className="projectTitle">Individuales</h1>
+                        <h1 className="projectGroupTitle">Individuales</h1>
                     </Col>
                     <Col className="column">
-                        <h1>Sitio web sobre bienestar y salud</h1>
+                        <h1 className="projectTitle">Sitio web sobre bienestar y salud</h1>
                         <div className="projectImgGroup">
                             <img id="cya" className={mode === "dark" ? "projectImg" : "projectImgLight"} src={cya} alt="Ecommerce Cuerpo y Armonía" />
                             <div className="projectImgText"><p className="imgText">HTML - CSS - Sass - Bootstrap</p></div>
@@ -31,7 +31,7 @@ const Projects = ({ mode }) => {
                         </div>
                     </Col>
                     <Col className="column">
-                        <h1>Ecommerce</h1>
+                        <h1 className="projectTitle">Ecommerce</h1>
                         <div className="projectImgGroup">
                             <img id="cyaEcom" className={mode === "dark" ? "projectImg" : "projectImgLight"} src={cyaecom} alt="Ecommerce Cuerpo y Armonía"  />
                             <div className="projectImgText"><p className="imgText">ReactJS - CSS - Bootstrap - Firebase</p></div>
@@ -44,7 +44,7 @@ const Projects = ({ mode }) => {
                         </div>
                     </Col>
                     <Col className="column">
-                        <h1>Portfolio</h1>
+                        <h1 className="projectTitle">Portfolio</h1>
                         <div className="projectImgGroup">
                             <div className="projectImgGroup">
                                 <img id="port" className={mode === "dark" ? "projectImg" : "projectImgLight"} src={portfolio} alt="Ecommerce Cuerpo y Armonía" />
@@ -61,10 +61,10 @@ const Projects = ({ mode }) => {
                 </Row>
                 <Row className="projectGroup" lg={3}>
                     <Col className="column">
-                        <h1 className="projectTitle">Colaborativos</h1>
+                        <h1 className="projectGroupTitle">Colaborativos</h1>
                     </Col>
                     <Col className="column">
-                        <h1>Mensajería instantánea</h1>
+                        <h1 className="projectTitle">Mensajería instantánea</h1>
                         <div className="projectImgGroup">
                             <img id="pal" className={mode === "dark" ? "projectImg" : "projectImgLight"} src={palomo} alt="Chat de mensajería instantánea" />
                             <div className="projectImgText"><p className="imgText">ReacJS - CSS - Sass</p></div>
@@ -77,7 +77,7 @@ const Projects = ({ mode }) => {
                         </div>
                     </Col>
                     <Col className="column">
-                        <h1>Portal para mascotas perdidas</h1>
+                        <h1 className="projectTitle">Portal para mascotas perdidas</h1>
                         <div className="projectImgGroup">
                             <img id="masc" className={mode === "dark" ? "projectImg" : "projectImgLight"} src={mascotas} alt="Portal para mascotas perdidas" />
                             <div className="projectImgText"><p className="imgText">ReactJS - Bootstrap - API Request</p></div>
@@ -92,10 +92,10 @@ const Projects = ({ mode }) => {
                 </Row>
                 <Row className="projectGroup" lg={3}>
                     <Col className="column">
-                        <h1 className="projectTitle">NoCode</h1>
+                        <h1 className="projectGroupTitle">NoCode</h1>
                     </Col>
                     <Col className="column">
-                        <h1>Alquiler de hospedaje</h1>
+                        <h1 className="projectTitle">Alquiler de hospedaje</h1>
                         <div className="projectImgGroup">
                         <img id="nocode" className={mode === "dark" ? "projectImg" : "projectImgLight"} src={nocode} alt="Chat de mensajería instantánea" />
                         <div className="projectImgText"><p className="imgText">Bubble - Google API - Stripe API</p></div>
