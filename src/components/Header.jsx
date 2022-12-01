@@ -1,4 +1,4 @@
-import { BrightnessHighFill, HouseFill, ArrowDownCircleFill } from 'react-bootstrap-icons';
+import { BrightnessHighFill, HouseFill, ArrowDownCircleFill, MoonFill } from 'react-bootstrap-icons';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -26,7 +26,9 @@ const Header = ({ switchMode, mode }) => {
                             </div>
                             <div className={mode === "dark" ? "headerSide" : "headerSideLight"} >
                                 <div className='tooltipH'>
-                                    <BrightnessHighFill className={mode === "dark" ? 'icon' : 'iconLight'} onClick={switchMode} />
+                                    { mode === "dark" ?
+                                    <BrightnessHighFill className='icon' onClick={switchMode} /> :
+                                    <MoonFill className='iconLight' onClick={switchMode} /> }
                                     <span className="tooltiptextH">Mode</span>
                                 </div>
                                 <a href='https://drive.google.com/file/d/1CVYS6GXP_5IXYuHo8RcSDLlbPlg_lABy/view?usp=share_link' target={'_blank'} className='tooltipH'>
