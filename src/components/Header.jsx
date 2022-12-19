@@ -31,7 +31,7 @@ const Header = ({ switchMode, mode }) => {
                                     <MoonFill className='iconLight' onClick={switchMode} /> }
                                     <span className="tooltiptextH">Mode</span>
                                 </div>
-                                <a href='https://drive.google.com/file/d/1F0DiHMxfcbAWdlRHNOM_7qKcehCxHa6D/view?usp=sharing' target={'_blank'} className='tooltipH'>
+                                <a href='https://drive.google.com/file/d/1F0DiHMxfcbAWdlRHNOM_7qKcehCxHa6D/view?usp=share_link' target={'_blank'} className='tooltipH'>
                                     <ArrowDownCircleFill className={mode === "dark" ? 'icon' : 'iconLight'} />
                                     <span className="tooltiptextH">CV</span>
                                 </a>
